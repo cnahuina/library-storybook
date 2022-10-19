@@ -7,7 +7,7 @@ export default {
         numberOfChildren: { type: "number", defaultValue: 4 },
         direction : {
             options : ['row','column'],
-            control : { type: 'radio' }
+            control : { type: 'select' }
         }
     }
 }
@@ -17,7 +17,8 @@ const Template = ({ numberOfChildren, ...args }) => (
             <div style={{
                 width: "50px", 
                 height: "50px", 
-                backgroundColor: "red", 
+                backgroundColor: "#FF1C44",
+                color: '#FFFFFF',
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
